@@ -1,0 +1,169 @@
+body
+     {background-color: rgb(232, 85, 85);
+    }
+ h2 {
+    color: rgb(202, 8, 8);
+     text-align: Left;
+    }
+ p  {
+    color: rgb(145, 8, 31);
+    text-align: left;
+ }
+ 
+/*.table{*/
+Table td,th,tr{
+   background-color: aliceblue;
+   border-style: double;
+   font-style: helvetica;
+   border: 15px solid border black;
+   width: 70%;
+   border-radius: 3px;
+}
+
+#img1{
+   float: left;
+   margin-right: 10px;
+}
+
+.home{
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-color: antiquewhite;
+  
+}
+
+main {
+   display: flex;
+   gap: 20px;
+   justify-content: center;
+   padding: 20px;
+ }
+
+ section {
+   width: 300px;
+   border: 10px solid #ccc;
+   padding: 20px;
+   margin: 30px;
+   background-color: #fff;
+   box-sizing: border-box; /* Ensures padding and border are included in width/height */
+ }
+
+
+ main {
+   display: flex;
+   gap: 20px;
+   justify-content: center;
+   padding: 20px;
+ }
+ 
+ .decor-item {
+   width: 300px;
+   border: 10px solid #510606;
+   padding: 20px;
+   margin: 10px;
+   background-color: #ffcdf3;
+ }
+ 
+ .absolute-position {
+   position: absolute;
+   top: 0;
+   right: 0;
+   background-color: #d25656;
+   padding: 5px;
+ }
+ 
+ .relative-position {
+   position: relative;
+ }
+ 
+ .relative-child {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: #f3f1b5;
+   padding: 5px;
+ }
+ 
+ .fixed-position {
+   position: relative; /* For demonstration purposes */
+ }
+ 
+ .fixed-element {
+   position: fixed;
+   bottom: 0;
+   right: 0;
+   background-color: #e17a7a;
+   padding: 10px;
+ }
+
+ main {
+   padding: 20px;
+ }
+ 
+ .columns {
+   column-count: 2; /* Creates two columns */
+   column-gap: 20px; /* Adds space between columns */
+ }
+ 
+ .flex-container {
+   display: flex;
+   gap: 20px; /* Space between items */
+   flex-wrap: wrap; /* Wrap items to the next row if needed */
+ }
+ 
+ .flex-item {
+   flex: 1; /* Items take equal space */
+   padding: 60px;
+   background-color: #f4f4f4;
+   text-align: center;
+ }
+ 
+ .flex-item img {
+   max-width: 100%; /* Ensures image fits within its container */
+   height: auto; /* Maintains aspect ratio */
+ }
+ 
+ .decor-item {
+   width: 200px;
+   height: 200px;
+   background-color: #ccc;
+   transition: transform 0.5s ease; /* Smooth transition */
+ }
+ 
+ .decor-item:hover {
+   transform: scale(1.2); /* Enlarges the item on hover */
+ }
+ 
+ .box {
+   width: 100px;
+   height: 100px;
+   background-color: #ccc;
+   transition: background-color 1s ease-in-out; /* Smooth start and end */
+ }
+ 
+ .box:hover {
+   background-color: #f4a261; /* Changes color on hover */
+   padding: 9px;
+ }
+ 
+ @keyframes slideIn {
+   from {
+     transform: translateX(-100%);
+     opacity: 0;
+   }
+   to {
+     transform: translateX(0);
+     opacity: 1;
+   }
+ }
+ 
+ .animated-box {
+   width: 200px;
+   height: 200px;
+   padding: 8px;
+   background-color: #f4a261;
+   animation: slideIn 2s ease-in-out; /* Applies animation */
+ }
+ 
